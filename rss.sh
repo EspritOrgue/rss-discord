@@ -8,6 +8,7 @@ if ! test -f "$(dirname $0)/default.sh";then
 else
    source $(dirname $0)/default.sh
 fi
+output_dir="$(dirname $0)/output"
 echo '~~ Checking commands ~~'
 source $(dirname $0)/includes/check_cmd.sh
 echo '~~ Assigining values ~~'

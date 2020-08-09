@@ -12,9 +12,9 @@ IFS="$oldIFS"
 # Loop the items of the parsed feed
 for line in "${lines[@]}"
    do
-      title=$(echo $line | grep "item" | grep "title" | cut -d "=" -f2-)
+      title=$(echo $line | grep "item/title" | cut -d "=" -f2-)
       if [ -z "$title" ];then
-         link=$(echo $line | grep "item" | grep "link" | cut -d "=" -f2-)
+         link=$(echo $line | grep "item/link" | cut -d "=" -f2-)
          if [ -z "$link" ];then
             echo "Not a Title or a Link."
          else

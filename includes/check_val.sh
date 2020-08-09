@@ -9,6 +9,8 @@ fi
 if [ -z "$file" ];then
    echo 'No file path specified. Exiting...'
    exit
+else
+   file="$output_dir/$file"
 fi
 
 if [ -z "$discord" ];then
