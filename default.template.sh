@@ -1,15 +1,12 @@
 #!/bin/bash
 # author: Amir Alwash
 
-url=
-file=
-discord=
-feed_title=
-feed_description=
-color=
-author_name=
-author_url=
-author_icon=
-footer_title=
-footer_icon=
-field=
+default_feed_title=
+default_feed_description=
+default_color=
+default_author_name=
+default_author_url=
+default_author_icon=
+default_footer_title=
+default_footer_icon=
+default_field=

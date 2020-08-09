@@ -12,7 +12,7 @@ do
       # echo '{"embeds": [{"title":"'"$feed_title"'","description": "'"$description"' **'"$feeder_title"'**","color": '"$color"',"footer": {"icon_url":"'"$footer_icon"'","text": "'"$footer_title"'"},"author": {"icon_url":"'"$author_icon"'","name": "'"$author_name"'","url": "'"$author_url"'"},"fields": [{"name": "'"$field"'","value": "'"$feeder_url"'"}]}]}'
       curl -X POST\
       -H "Content-Type: application/json"\
-      -d '{"embeds": [{"title":"'"$feed_title"'","description": "'"$description"' **'"$feeder_title"'**","color": '"$color"',"footer": {"icon_url":"'"$footer_icon"'","text": "'"$footer_title"'"},"author": {"icon_url":"'"$author_icon"'","name": "'"$author_name"'","url": "'"$author_url"'"},"fields": [{"name": "'"$field"'","value": "'"$feeder_url"'"}]}]}' $discord
+      -d '{"embeds": [{"title":"'"$feed_title"'","description": "'"$feed_description"' **'"$feeder_title"'**","color": '"$color"',"footer": {"icon_url":"'"$footer_icon"'","text": "'"$footer_title"'"},"author": {"icon_url":"'"$author_icon"'","name": "'"$author_name"'","url": "'"$author_url"'"},"fields": [{"name": "'"$field"'","value": "'"$feeder_url"'"}]}]}' $discord
       sleep 2
    fi
    echo "$COUNT $line"
